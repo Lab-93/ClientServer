@@ -52,6 +52,8 @@ class dataPacket:
             48: [], 96: [], 192: [],
         }
 
+        self.incrementLoad(self.stream(host, port))
+
 
     def stream( self, host, port ) -> bytes:
         """
@@ -96,6 +98,7 @@ class dataPacket:
 
 
         ''' Feed the artifact into the buffer, updating each as needed. '''
+        '''
         for buffer in self.buffers\
                           .keys():
 
@@ -104,3 +107,4 @@ class dataPacket:
                 .append( artifact )
 
             update_buffer(self.buffers[ buffer ])
+        '''
