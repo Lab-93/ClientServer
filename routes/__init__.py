@@ -20,7 +20,11 @@ from flask import Response
 from flask import stream_with_context as flask_stream
 
 
+@server.route("/")
+def dataPacket: return data
 
+
+'''
 @server.route("/<asset>/live-data/")
 def liveAuctionDataServer(asset):
     """
@@ -54,3 +58,4 @@ def liveAuctionDataServer(asset):
     response.headers["X-Accel-Buffering"] = "no"
 
     return response
+'''
