@@ -13,15 +13,12 @@ to the same server.
 
 
 
-from __main__ import server
+from .. import server, data
 
 # python.flask; for building our own http API and URI.
 from flask import Response
 from flask import stream_with_context as flask_stream
 
-# JSON Data Serialization
-from json import loads as deserialize
-from json import dumps as serialize
 
 
 @server.route("/<asset>/live-data/")
