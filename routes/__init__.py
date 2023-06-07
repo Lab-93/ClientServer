@@ -13,7 +13,7 @@ to the same server.
 
 
 
-from .. import server, data
+from .. import *
 
 # python.flask; for building our own http API and URI.
 from flask import Response
@@ -21,7 +21,7 @@ from flask import stream_with_context as flask_stream
 
 
 @server.route("/")
-def dataPacket: return data
+def dataPacket(): return data
 
 
 '''

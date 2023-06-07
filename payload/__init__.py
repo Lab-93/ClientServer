@@ -11,6 +11,7 @@ from socket import SOCK_STREAM as STREAM
 # python.json; for reading and writing data to the web or a stream.
 from json import loads as deserialize
 
+# python.time.sleep; for maintaining memory access.
 from time import sleep
 
 

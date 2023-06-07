@@ -25,7 +25,10 @@ from .payload import *
 
 # Define our Flask instance as `server`, out of convention.
 server = Flask(__name__)
-from .routes import *
 
 # Define our data object, so we have access to a static `data.payload` object.
 data = dataPacket()
+
+
+from .routes import *
+
